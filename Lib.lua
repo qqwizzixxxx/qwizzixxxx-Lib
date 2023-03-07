@@ -7,11 +7,11 @@ local run = game:GetService("RunService")
 
 local Utility = {}
 local Objects = {}
-function Kavo:DraggingEnabled(frame, parent)
+function qqwizzixxxx:DraggingEnabled(frame, parent)
         
     parent = parent or frame
     
-    -- stolen from wally or kiriot, kek
+    -- stolen from wally or kiriot, xd
     local dragging = false
     local dragInput, mousePos, framePos
 
@@ -126,7 +126,7 @@ local SettingsT = {
 
 }
 
-local Name = "KavoConfig.JSON"
+local Name = "qqwizzixxxxConfig.JSON"
 
 pcall(function()
 
@@ -185,10 +185,10 @@ function Kavo.CreateLib(kavName, themeList)
 
     themeList = themeList or {}
     local selectedTab 
-    kavName = kavName or "Library"
-    table.insert(Kavo, kavName)
+    qwizName = qwizName or "Library"
+    table.insert(qwiz, qwizName)
     for i,v in pairs(game.CoreGui:GetChildren()) do
-        if v:IsA("ScreenGui") and v.Name == kavName then
+        if v:IsA("ScreenGui") and v.Name == qwizName then
             v:Destroy()
         end
     end

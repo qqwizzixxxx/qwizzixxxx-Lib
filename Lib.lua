@@ -147,7 +147,7 @@ function qqwizzixxxx:ToggleUI()
     end
 end
 
-function Kavo.CreateLib(kavName, themeList)
+function qqwizzixxxx.CreateLib(qwizName, themeList)
     if not themeList then
         themeList = themes
     end

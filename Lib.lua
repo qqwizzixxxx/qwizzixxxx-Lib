@@ -1,4 +1,4 @@
-local qqwizzixxxx = {}
+local Kavo = {}
 
 local tween = game:GetService("TweenService")
 local tweeninfo = TweenInfo.new
@@ -7,11 +7,11 @@ local run = game:GetService("RunService")
 
 local Utility = {}
 local Objects = {}
-function qqwizzixxxx:DraggingEnabled(frame, parent)
+function Kavo:DraggingEnabled(frame, parent)
         
     parent = parent or frame
     
-    -- stolen from wally or kiriot, xd
+    -- stolen from wally or kiriot, kek
     local dragging = false
     local dragInput, mousePos, framePos
 
@@ -126,7 +126,7 @@ local SettingsT = {
 
 }
 
-local Name = "qqwizzixxxxConfig.JSON"
+local Name = "KavoConfig.JSON"
 
 pcall(function()
 
@@ -139,7 +139,7 @@ end)
 
 local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
 
-function qqwizzixxxx:ToggleUI()
+function Kavo:ToggleUI()
     if game.CoreGui[LibName].Enabled then
         game.CoreGui[LibName].Enabled = false
     else
@@ -147,7 +147,7 @@ function qqwizzixxxx:ToggleUI()
     end
 end
 
-function qqwizzixxxx.CreateLib(qwizName, themeList)
+function Kavo.CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
     end
@@ -185,10 +185,10 @@ function qqwizzixxxx.CreateLib(qwizName, themeList)
 
     themeList = themeList or {}
     local selectedTab 
-    qwizName = qwizName or "Library"
-    table.insert(qwiz, qwizName)
+    kavName = kavName or "Library"
+    table.insert(Kavo, kavName)
     for i,v in pairs(game.CoreGui:GetChildren()) do
-        if v:IsA("ScreenGui") and v.Name == qwizName then
+        if v:IsA("ScreenGui") and v.Name == kavName then
             v:Destroy()
         end
     end
@@ -211,7 +211,7 @@ function qqwizzixxxx.CreateLib(qwizName, themeList)
 
     local blurFrame = Instance.new("Frame")
 
-    qqwizzixxxx:DraggingEnabled(MainHeader, Main)
+    Kavo:DraggingEnabled(MainHeader, Main)
 
     blurFrame.Name = "blurFrame"
     blurFrame.Parent = pages
@@ -264,7 +264,7 @@ function qqwizzixxxx.CreateLib(qwizName, themeList)
     title.Size = UDim2.new(0, 204, 0, 8)
     title.Font = Enum.Font.Gotham
     title.RichText = true
-    title.Text = qwizName
+    title.Text = kavName
     title.TextColor3 = Color3.fromRGB(245, 245, 245)
     title.TextSize = 16.000
     title.TextXAlignment = Enum.TextXAlignment.Left
@@ -284,9 +284,9 @@ function qqwizzixxxx.CreateLib(qwizName, themeList)
         }):Play()
         wait()
         game.TweenService:Create(Main, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-            Size = UDim2.new(0,0,0,0),
-            Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
-        }):Play()
+			Size = UDim2.new(0,0,0,0),
+			Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
+		}):Play()
         wait(1)
         ScreenGui:Destroy()
     end)
@@ -352,7 +352,7 @@ function qqwizzixxxx.CreateLib(qwizName, themeList)
         end
     end)()
 
-    function qqwizzixxxx:ChangeColor(prope,color)
+    function Kavo:ChangeColor(prope,color)
         if prope == "Background" then
             themeList.Background = color
         elseif prope == "SchemeColor" then
@@ -473,7 +473,7 @@ function qqwizzixxxx.CreateLib(qwizName, themeList)
             secName = secName or "Section"
             local sectionFunctions = {}
             local modules = {}
-        hidden = hidden or false
+	    hidden = hidden or false
             local sectionFrame = Instance.new("Frame")
             local sectionlistoknvm = Instance.new("UIListLayout")
             local sectionHead = Instance.new("Frame")
@@ -481,12 +481,12 @@ function qqwizzixxxx.CreateLib(qwizName, themeList)
             local sectionName = Instance.new("TextLabel")
             local sectionInners = Instance.new("Frame")
             local sectionElListing = Instance.new("UIListLayout")
-            
-        if hidden then
-        sectionHead.Visible = false
-        else
-        sectionHead.Visible = true
-        end
+			
+	    if hidden then
+		sectionHead.Visible = false
+	    else
+		sectionHead.Visible = true
+	    end
 
             sectionFrame.Name = "sectionFrame"
             sectionFrame.Parent = page
@@ -2593,53 +2593,53 @@ function qqwizzixxxx.CreateLib(qwizName, themeList)
             end
             
             function Elements:NewLabel(title)
-                local labelFunctions = {}
-                local label = Instance.new("TextLabel")
-                local UICorner = Instance.new("UICorner")
-                label.Name = "label"
-                label.Parent = sectionInners
-                label.BackgroundColor3 = themeList.SchemeColor
-                label.BorderSizePixel = 0
-                label.ClipsDescendants = true
-                label.Text = title
-                label.Size = UDim2.new(0, 352, 0, 33)
-                label.Font = Enum.Font.Gotham
-                label.Text = "  "..title
-                label.RichText = true
-                label.TextColor3 = themeList.TextColor
-                Objects[label] = "TextColor3"
-                label.TextSize = 14.000
-                label.TextXAlignment = Enum.TextXAlignment.Left
-                
-                UICorner.CornerRadius = UDim.new(0, 4)
+            	local labelFunctions = {}
+            	local label = Instance.new("TextLabel")
+            	local UICorner = Instance.new("UICorner")
+            	label.Name = "label"
+            	label.Parent = sectionInners
+            	label.BackgroundColor3 = themeList.SchemeColor
+            	label.BorderSizePixel = 0
+				label.ClipsDescendants = true
+            	label.Text = title
+           		label.Size = UDim2.new(0, 352, 0, 33)
+	            label.Font = Enum.Font.Gotham
+	            label.Text = "  "..title
+	            label.RichText = true
+	            label.TextColor3 = themeList.TextColor
+	            Objects[label] = "TextColor3"
+	            label.TextSize = 14.000
+	            label.TextXAlignment = Enum.TextXAlignment.Left
+	            
+	           	UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = label
-                
-                if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
-                    Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
-                end 
-                if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                    Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
-                end 
+            	
+	            if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
+	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
+	            end 
+	            if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
+	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
+	            end 
 
-                coroutine.wrap(function()
-                    while wait() do
-                        label.BackgroundColor3 = themeList.SchemeColor
-                        label.TextColor3 = themeList.TextColor
-                    end
-                end)()
+		        coroutine.wrap(function()
+		            while wait() do
+		                label.BackgroundColor3 = themeList.SchemeColor
+		                label.TextColor3 = themeList.TextColor
+		            end
+		        end)()
                 updateSectionFrame()
                 UpdateSize()
                 function labelFunctions:UpdateLabel(newText)
-                    if label.Text ~= "  "..newText then
-                        label.Text = "  "..newText
-                    end
-                end 
+                	if label.Text ~= "  "..newText then
+                		label.Text = "  "..newText
+                	end
+                end	
                 return labelFunctions
-            end 
+            end	
             return Elements
         end
         return Sections
     end  
     return Tabs
 end
-return qqwizzixxxx
+return Kavo

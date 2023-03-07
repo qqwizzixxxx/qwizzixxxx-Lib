@@ -1,5 +1,7 @@
 Lib Functions Here:
 
+Example Hub:loadstring(game:HttpGet("https://raw.githubusercontent.com/qqwizzixxxx/qwizzixxxx-Lib/main/Example%20Script.lua"))()
+
 Lib
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/qqwizzixxxx/qwizzixxxx-Lib/main/Lib.lua"))()
 

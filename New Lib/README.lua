@@ -1,6 +1,6 @@
 --[Xdddd
 
-Example Hub:loadstring(game:HttpGet(""))() 
+Example Hub:loadstring(game:HttpGet("https://raw.githubusercontent.com/qqwizzixxxx/qwizzixxxx-Lib/main/New%20Lib/Example.lua"))() 
 ]--
 
 --Lib

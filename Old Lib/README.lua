@@ -5,7 +5,7 @@
 --Example Hub:loadstring(game:HttpGet("https://raw.githubusercontent.com/qqwizzixxxx/qwizzixxxx-Lib/main/Example%20Script.lua"))()
 
 --Lib
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/qqwizzixxxx/qwizzixxxx-Lib/main/Lib.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/qqwizzixxxx/qwizzixxxx-Lib/main/Old%20Lib/Old%20Lib.lua"))()
 
 --Window
 local Window = Library.CreateLib("TITLE", "DarkTheme")

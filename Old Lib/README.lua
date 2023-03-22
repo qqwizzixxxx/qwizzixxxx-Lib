@@ -2,7 +2,7 @@
 
 --Lib Functions Here:
 
---Example Hub:loadstring(game:HttpGet("https://raw.githubusercontent.com/qqwizzixxxx/qwizzixxxx-Lib/main/Example%20Script.lua"))()
+--Example Hub:loadstring(game:HttpGet("https://raw.githubusercontent.com/qqwizzixxxx/qwizzixxxx-Lib/main/Old%20Lib/ExampleHub.lua"))()
 
 --Lib
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/qqwizzixxxx/qwizzixxxx-Lib/main/Old%20Lib/Old%20Lib.lua"))()

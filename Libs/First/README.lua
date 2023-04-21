@@ -1,8 +1,6 @@
---Old ReadMe
+--ReadMe
 
 --Lib Functions Here:
-
---[Example] Hub:loadstring(game:HttpGet(""))()
 
 --Lib
 local Library = loadstring(game:HttpGet(""))()

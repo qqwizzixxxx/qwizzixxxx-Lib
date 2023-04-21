@@ -18,7 +18,8 @@ local Window = Library.CreateLib("TITLE", "DarkTheme")
     Ocean
     Midnight
     Sentinel
-    Synapse ]--
+    Synapse
+    Sky ]--
 
 
 --New Tab
